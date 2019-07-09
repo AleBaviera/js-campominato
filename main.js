@@ -44,13 +44,13 @@ while (trovato == false){
 
     else{
       trovato = false;
-      k++;
+
 
 
     }
 
   }
-
+k++;
 }
 
 
