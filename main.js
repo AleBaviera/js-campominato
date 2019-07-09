@@ -19,8 +19,13 @@ function numrandom(min,max){
 var estratti = [];
 
 for (var i = 0; i < 16; i++) {
-  estratti.push(numrandom(1,100));
 
+  if(estratti[i] == estratti.indexOf(i)){
+    i = i - 1;
+  }
+  else{
+    estratti.push(numrandom(1,100));
+  }
 }
 console.log(estratti);
 trovato = false;
@@ -52,11 +57,3 @@ while (trovato == false){
   }
 k++;
 }
-
-
-// calcolo punteggio
-  // console.log(j);
-
-// console.log('il mio numero' + num);
-  // console.log('posizione in array' + j);
-  // console.log('valore in array' + estratti[j]);
