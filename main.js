@@ -25,7 +25,7 @@ for (var i = 0; i < 16; i++) {
 console.log(estratti);
 trovato = false;
 var k = 0;
-do{
+while (trovato == false){
 // prompt finchè num corrisponde array
 
   num = parseInt(prompt('inserisci un numero da 1 a 100'));
@@ -41,14 +41,16 @@ do{
       console.log(j);
      }
 
-     else{
-       trovato = false;
+    else{
+      trovato = false;
 
-     }
-     k++;
+
+
+    }
+
   }
-
-}  while (trovato == true);
+  k++;
+}
 
 
 // calcolo punteggio
