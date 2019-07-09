@@ -20,7 +20,7 @@ var estratti = [];
 
 for (var i = 0; i < 16; i++) {
 
-  if(estratti[i] == estratti.indexOf(i)){
+  if(estratti[i] == estratti.indexOf()){
     i = i - 1;
   }
   else{
