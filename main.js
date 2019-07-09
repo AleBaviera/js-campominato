@@ -7,7 +7,7 @@ console.log('ciao');
 // Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha inserito un numero consentito.
 // dichiaro var
 
-var num;
+var num, trovato;
 
 // funzione num random
 
@@ -23,19 +23,33 @@ for (var i = 0; i < 16; i++) {
 
 }
 console.log(estratti);
-
+trovato = false;
+var k = 1;
+do{
 // prompt finchè num corrisponde array
-for (var j = 0; j < 16; j++) {
-  num = parseInt(prompt('inserisci un numero da 1 a 100'));
-  console.log(num);
 
-  if (estratti[j] == num){
-     alert('beccato!');
-   }
-   else {
-     num = parseInt(prompt('inserisci un numero da 1 a 100'));
-   }
+  num = parseInt(prompt('inserisci un numero da 1 a 100'));
+
+
+  for (var j = 0; j < estratti.length; j++) {
+
+    if (estratti[j] == num){
+      trovato = true;
+      alert('beccato!');
+      alert('hai totalizzato punti ' + k);
+      console.log(j);
+     }
+
+
+
   }
+  k++;
+}  while (trovato == true);
 
 
 // calcolo punteggio
+  // console.log(j);
+
+// console.log('il mio numero' + num);
+  // console.log('posizione in array' + j);
+  // console.log('valore in array' + estratti[j]);
