@@ -18,7 +18,7 @@ function numrandom(min,max){
 // creo un array con 16 num random da 1 100
 var estratti = [];
 estratti.push(numrandom(1,100));
-for (var i = 0; i < 16; i++) {
+for (var i = 1; i < 16; i++) {
 
   if(estratti.indexOf() >= 0){
     i = i - 1;
