@@ -37,15 +37,15 @@ do{
       trovato = true;
       alert('beccato!');
       alert('hai totalizzato punti ' + k);
-      break;
+      alert('ricarica la pagina per ricominciare');
       console.log(j);
      }
 
      else{
        trovato = false;
-       k++;
-     }
 
+     }
+     k++;
   }
 
 }  while (trovato == true);
