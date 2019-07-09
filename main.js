@@ -38,18 +38,19 @@ while (trovato == false){
       alert('beccato!');
       alert('hai totalizzato punti ' + k);
       alert('ricarica la pagina per ricominciare');
+      break;
       console.log(j);
      }
 
     else{
       trovato = false;
-
+      k++;
 
 
     }
 
   }
-  k++;
+
 }
 
 
