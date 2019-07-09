@@ -24,26 +24,30 @@ for (var i = 0; i < 16; i++) {
 }
 console.log(estratti);
 trovato = false;
-var k = 1;
+var k = 0;
 do{
 // prompt finchè num corrisponde array
 
   num = parseInt(prompt('inserisci un numero da 1 a 100'));
 
 
-  for (var j = 0; j < estratti.length; j++) {
+  for (var j = 0; j < 84; j++) {
 
     if (estratti[j] == num){
       trovato = true;
       alert('beccato!');
       alert('hai totalizzato punti ' + k);
+      break;
       console.log(j);
      }
 
-
+     else{
+       trovato = false;
+       k++;
+     }
 
   }
-  k++;
+
 }  while (trovato == true);
 
 
