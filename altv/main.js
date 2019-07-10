@@ -24,63 +24,75 @@ function numrandom(min,max){
 }
 // creo un array con 16 num random da 1 100
 var estratti = [];
-
+var random = numrandom(1,100);
+estratti.push(random);
 switch (livello) {
   case 0:
-  estratti.push(numrandom(1,100));
+
   for (var i = 1; i < 16; i++) {
 
-    if(estratti.indexOf() >= 0){
-      i = i - 1;
+
+    var estratto = numrandom(1,100);
+    if(!estratti.includes(estratto)){
+      estratti.push(estratto);
+      console.log('estratto è' + estratto);
     }
-    else{
-      estratti.push(numrandom(1,100));
+    else {
+      i--;
     }
+    // else{
+    //   estratti.push(estratto);
+    //   // estratto = estratti.push(numrandom(1,100));
+    // }
+
   }
   alert('inserisci un numero da 1 a 100');
 
     break;
     case 1:
-    estratti.push(numrandom(1,80));
     for (var i = 1; i < 16; i++) {
-
-      if(estratti.indexOf() >= 0){
-        i = i - 1;
-      }
-      else{
-        estratti.push(numrandom(1,80));
-      }
+    var estratto = numrandom(1,80);
+    if(!estratti.includes(estratto)){
+      estratti.push(estratto);
+      console.log('estratto è' + estratto);
     }
+    else {
+      i--;
+    }
+
+  }
     alert('inserisci un numero da 1 a 80');
 
       break;
       case 2:
-      estratti.push(numrandom(1,50));
       for (var i = 1; i < 16; i++) {
-
-        if(estratti.indexOf() >= 0){
-          i = i - 1;
+        var estratto = numrandom(1,50);
+        if(!estratti.includes(estratto)){
+          estratti.push(estratto);
+          console.log('estratto è' + estratto);
         }
-        else{
-          estratti.push(numrandom(1,50));
+        else {
+          i--;
         }
       }
       alert('inserisci un numero da 1 a 50');
 
         break;
-  default:
-  estratti.push(numrandom(1,100));
-  for (var i = 1; i < 16; i++) {
 
-    if(estratti.indexOf() >= 0){
-      i = i - 1;
-    }
-    else{
-      estratti.push(numrandom(1,100));
-    }
+  default:
+  for (var i = 1; i < 16; i++) {
+  var estratto = numrandom(1,80);
+  if(!estratti.includes(estratto)){
+    estratti.push(estratto);
+    console.log('estratto è' + estratto);
   }
+  else {
+    i--;
+  }
+
 }
 
+}
 
 console.log(estratti);
 trovato = false;

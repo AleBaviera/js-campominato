@@ -17,15 +17,22 @@ function numrandom(min,max){
 }
 // creo un array con 16 num random da 1 100
 var estratti = [];
-estratti.push(numrandom(1,100));
+var random = numrandom(1,100);
+estratti.push(random);
+
 for (var i = 1; i < 16; i++) {
 
-  if(estratti.indexOf() >= 0){
-    i = i - 1;
+
+  var estratto = numrandom(1,100);
+  if(!estratti.includes(estratto)){
+    estratti.push(estratto);
+    console.log('estratto è' + estratto);
   }
-  else{
-    estratti.push(numrandom(1,100));
+  else {
+    i--;
   }
+  
+
 }
 console.log(estratti);
 trovato = false;
